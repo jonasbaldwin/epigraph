@@ -1,0 +1,246 @@
+version: 1
+quotes:
+  - id: kathryn-schulz-until-we-know-we-are-wrong
+    quote: "Until we know we are wrong, being **wrong** feels exactly like being **right**."
+    attribution: "Kathryn Schulz"
+    source: "Being Wrong: Adventures in the Margin of Error"
+    explanation: "Summarized in How Minds Change by David McRaney"
+    enabled: true
+  - id: charles-renouvier-properly-speaking-there-is-no-certainty
+    quote: "Properly speaking, there is no certainty; there are only people who are certain."
+    attribution: "Charles Renouvier"
+    source: "Essais de Critique Générale"
+    enabled: true
+  - id: stuart-halloway-act-a-little-less-think-a
+    quote: "Act a little less, think a little more."
+    attribution: "Stuart Halloway"
+    enabled: true
+  - id: anonymous-no-matter-how-tall-your-grandfather
+    quote: "No matter how tall your grandfather was, you'll have to do your own growing."
+    attribution: "Anonymous"
+    enabled: true
+  - id: anonymous-some-people-think-the-ideal-occupation
+    quote: "Some people think the ideal occupation is one that doesn't keep them occupied."
+    attribution: "Anonymous"
+    enabled: true
+  - id: j-m-barrie-we-are-all-failures-at
+    quote: "We are all failures — at least the best of us are."
+    attribution: "J. M. Barrie"
+    enabled: true
+  - id: henry-ford-there-is-no-man-living-who
+    quote: "There is no man living who isn't capable of doing more than he thinks he can do."
+    attribution: "Henry Ford"
+    enabled: true
+  - id: marcus-aurelius-it-never-ceases-to-amaze-me
+    quote: "It never ceases to amaze me: we all love ourselves more than other people, but care more about their opinion than our own."
+    attribution: "Marcus Aurelius"
+    enabled: true
+  - id: anonymous-ideas-won-t-work-unless-you-do
+    quote: "Ideas won't work unless you do."
+    attribution: "Anonymous"
+    enabled: true
+  - id: anonymous-the-man-who-says-it-can-t
+    quote: "The man who says \"It can't be done\" is interrupted by the man who is doing it."
+    attribution: "Anonymous"
+    enabled: true
+  - id: dr-george-w-crane-act-the-way-you-would-like
+    quote: "Act the way you would like to be and soon you will be the way you act."
+    attribution: "Dr. George W. Crane"
+    enabled: true
+  - id: ralph-waldo-emerson-the-reward-of-a-thing-well
+    quote: "The reward of a thing well done is to have done it."
+    attribution: "Ralph Waldo Emerson"
+    enabled: true
+  - id: marie-curie-nothing-in-life-is-to-be
+    quote: "Nothing in life is to be feared, it is only to be understood. Now is the time to understand more, so that we may fear less."
+    attribution: "Marie Curie"
+    enabled: true
+  - id: mother-teresa-we-cannot-do-great-things-on
+    quote: "We cannot do great things on this Earth, only small things with great love."
+    attribution: "Mother Teresa"
+    enabled: true
+  - id: george-b-p-box-all-models-are-wrong-but-some
+    quote: "All models are wrong, but some are useful."
+    attribution: "George B. P. Box"
+    enabled: true
+  - id: pema-chodron-the-future-is-completely-open-and
+    quote: "The future is completely open, and we are writing it moment to moment."
+    attribution: "Pema Chödrön"
+    enabled: true
+  - id: bertrand-russell-the-whole-problem-with-the-world
+    quote: "The whole problem with the world is that fools and fanatics are always so certain of themselves, but wiser people are so full of doubts."
+    attribution: "Bertrand Russell"
+    enabled: true
+  - id: no-stupid-questions-holding-onto-anger-is-like-drinking
+    quote: "Holding onto anger is like drinking poison and hoping someone else will die."
+    attribution: "No Stupid Questions"
+    source: "Podcast episode 139"
+    explanation: "https://freakonomics.com/podcast/why-do-we-get-angry/"
+    enabled: true
+  - id: steve-shives-in-order-to-stop-the-worse
+    quote: "In order to stop the worst from happening you first need to believe the worst can happen."
+    attribution: "Steve Shives"
+    enabled: true
+  - id: unknown-a-wise-man-speaks-because-he
+    quote: "A wise man speaks because he has something to say; a fool because he has to say something."
+    attribution: "Unknown"
+    enabled: true
+  - id: unknown-the-right-question-is-usually-more
+    quote: "The right question is usually more important than the right answer."
+    attribution: "Unknown"
+    enabled: true
+  - id: unknown-good-people-do-not-need-laws
+    quote: "Good people do not need laws to tell them to act responsibly, while bad people will find a way around the laws."
+    attribution: "Unknown"
+    enabled: true
+  - id: debateherofficial-never-forget-that-humanity-invented-a
+    quote: "Never forget that humanity invented a fake resource and then let a tiny portion of the population use that fake resource to claim ownership of all of the real resources on the planet, hoard them, and then force the majority of people to sell the majority of their lives in service to them, and in return the masses might be given enough of the actual resources they need to survive. And yet the people continue to go along with this, they keep pretending the fake resource is real. They've been successfully trained and gaslit into believing that the world could not function any other way. Programmed so thoroughly over multiple generations that the majority of people won't even question whether or not the world could or should be different. They don't realize that war is being waged against them. They no longer realize that they are slaves and anytime you try to tell them they just parrot the programming they've been fed their whole lives."
+    attribution: "debateherofficial"
+    source: "Instagram"
+    explanation: "https://www.instagram.com/reel/DEEYZrnt59P/"
+    enabled: true
+  - id: john-scalzi-a-stupid-villian-threatens-charlie-a
+    quote: "A stupid villain threatens, Charlie. A smarter villain offers a service."
+    attribution: "John Scalzi"
+    source: "Starter Villain"
+    enabled: true
+  - id: montesquieu-knowledge-makes-men-gentle-just-as
+    quote: "Knowledge makes men gentle just as justice hardens us."
+    attribution: "Montesquieu"
+    enabled: true
+  - id: abraham-lincoln-i-do-not-like-that-man
+    quote: "I do not like that man, I must get to know him better."
+    attribution: "Abraham Lincoln"
+    source: "Get the Truth (book)"
+    enabled: true
+  - id: unknown-a-jack-of-all-trades-is
+    quote: "A Jack of all trades is master of none, but oftentimes better than a master of one."
+    attribution: "Unknown"
+    source: "https://www.youtube.com/watch?v=S9Jb7CZ2P-E"
+    enabled: true
+  - id: nelson-shanks-great-paintings-do-not-happen-in
+    quote: "Great paintings do not happen in the finish but in the beginning."
+    attribution: "Nelson Shanks"
+    source: "Life Drawing: How to Portray the Figure with accuracy and Expression"
+    enabled: true
+  - id: bertrand-russell-everything-is-vague-to-a-degree
+    quote: "Everything is **vague** to a degree you do not realize until you have tried to make it **precise**."
+    attribution: "Bertrand Russell"
+    source: "Quoted in Superintelligence by Nick Bostrom"
+    enabled: true
+  - id: goethe-wer-fremde-sprachen-nicht-kennt-weiss
+    quote: "Wer fremde Sprachen nicht kennt, weiß nichts von seiner eigenen."
+    attribution: "Goethe"
+    enabled: true
+  - id: traditional-apprendre-une-langue-cest-vivre-de
+    quote: "Apprendre une langue, c’est vivre de nouveau."
+    attribution: "Traditional"
+    source: "French proverb"
+    enabled: true
+  - id: alfred-lord-tennyson-a-lie-which-is-half-a
+    quote: "A lie which is half a truth is ever the blackest of lies."
+    attribution: "Alfred, Lord Tennyson"
+    source: "Weaponized Lies: How to think Critically in the Post-Truth Era by Daniel J. Levitin"
+    enabled: true
+  - id: josh-billings-wisdom-don-t-consist-in-knowing-more
+    quote: "Wisdom don't consist in knowing more that is new, but in knowing less that is false."
+    attribution: "Josh Billings"
+    enabled: true
+  - id: josh-billings-i-honestly-believe-it-is-better
+    quote: "I honestly believe it is better to know nothing than to know what ain't so."
+    attribution: "Josh Billings"
+    enabled: true
+  - id: jean-paul-sartre-if-you-are-lonely-when-you
+    quote: "If you are lonely when you are alone, you are in bad company."
+    attribution: "Jean-Paul Sartre"
+    enabled: true
+  - id: t-s-eliot-only-those-who-will-risk-going
+    quote: "Only those who will risk going too far can possibly find out how far one can go."
+    attribution: "T.S. Eliot"
+    enabled: true
+  - id: multiple-attributions-three-things-cannot-be-long-hidden
+    quote: "Three things cannot be long hidden: the sun, the moon, and the truth."
+    attribution: "Multiple Attributions"
+    source: "Buddha, Tathagata"
+    enabled: true
+  - id: aristotle-no-great-mind-has-ever-existed
+    quote: "No great mind has ever existed without a touch of madness."
+    attribution: "Aristotle"
+    source: "Attributed to Aristotle by Seneca the Younger, though not in Aristotle's surviving works."
+    enabled: true
+  - id: aristotle-it-is-the-mark-of-an
+    quote: "It is the mark of an educated mind to be able to entertain a thought without accepting it."
+    attribution: "Aristotle"
+    enabled: true
+  - id: tolstoy-there-is-only-one-important-timenow
+    quote: "There is only one important time—now. It is the only important time because it is the only time when we have any power."
+    attribution: "Tolstoy"
+    enabled: true
+  - id: oscar-wilde-the-books-that-the-world-calls
+    quote: "The books that the world calls immoral are books that show the world its own shame."
+    attribution: "Oscar Wilde"
+    enabled: true
+  - id: plato-if-you-do-not-take-an
+    quote: "If you do not take an interest in the affairs of your government, then you are doomed to live under the rule of fools."
+    attribution: "Plato"
+    enabled: true
+  - id: plato-no-one-is-more-hated-than
+    quote: "No one is more hated than he who speaks the truth."
+    attribution: "Plato"
+    enabled: true
+  - id: richard-feynman-i-would-rather-have-questions-that
+    quote: "I would rather have questions that can't be answered than answers that can't be questioned."
+    attribution: "Richard Feynman"
+    enabled: true
+  - id: franklin-d-roosevelt-the-test-of-our-progress-is
+    quote: "The test of our progress is not whether we add more to the abundance of those who have much; it is whether we provide enough for those who have too little."
+    attribution: "Franklin D. Roosevelt"
+    enabled: true
+  - id: voltaire-those-who-can-make-you-believe
+    quote: "Those who can make you believe absurdities can make you commit atrocities."
+    attribution: "Voltaire"
+    enabled: true
+  - id: h-a-suddert-kennedy-it-s-much-easier-to-do-and
+    quote: "It's much easier to do and die than it is to reason why."
+    attribution: "H.A. Studdert Kennedy"
+    enabled: true
+  - id: john-le-carre-reason-is-logic-or-reason-is
+    quote: "Reason is logic, or reason is motive, or reason is a way of life."
+    attribution: "John Le Carré"
+    enabled: true
+  - id: francis-bacon-read-not-to-contradict-and-confute
+    quote: "Read not to contradict and confute; nor to believe and take for granted; nor to find talk and discourse; but to weigh and consider."
+    attribution: "Sir Francis Bacon"
+    enabled: true
+  - id: harold-gordon-ignorance-of-reality-provides-no-protection
+    quote: "Ignorance of reality provides no protection from it."
+    attribution: "Harold Gordon"
+    enabled: true
+  - id: finley-peter-dunne-you-can-lead-a-man-up
+    quote: "You can lead a man up to the university, but you can't make him think."
+    attribution: "Finley Peter Dunne"
+    enabled: true
+  - id: descartes-good-sense-is-of-all-things
+    quote: "Good sense is of all things in the world the most equally distributed, for everybody thinks himself so abundantly provided with it, that even those most difficult to please in all other matters do not commonly desire more of it than they already possess."
+    attribution: "Descartes"
+    enabled: true
+  - id: dowager-countess-life-is-a-game-in-which
+    quote: "Life is a game in which the player must appear ridiculous."
+    attribution: "Dowager Countess"
+    source: "Downton Abbey"
+    enabled: true
+  - id: joshua-ballanco-if-you-ever-feel-comfortable-when
+    quote: "If you ever feel comfortable when releasing a new product, you waited too long to release..."
+    attribution: "Joshua Ballanco"
+    source: "LinkedIn"
+    enabled: true
+  - id: unknown-people-can-only-meet-you-at
+    quote: "People can only meet you at the depth they met themselves."
+    attribution: "Unknown"
+    source: "Since You Asked podcast, season 2, episode 6"
+    enabled: true
+  - id: david-epstein-do-something-not-everything
+    quote: "Do something, not everything."
+    attribution: "David Epstein"
+    source: "Inside the Box"
+    enabled: true
