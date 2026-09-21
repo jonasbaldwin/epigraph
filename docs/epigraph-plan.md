@@ -28,9 +28,9 @@ The current 7.5-inch (B) panel is 800×480, three-color, SPI, and takes about 26
 
 **Before implementing the renderer, inspect the label on the back of the panel and the code printed on its flex cable.** The Amazon ASIN has existed across product revisions, so the URL alone is not enough to select the driver. Photograph both labels and keep them with the project records. The software setting will be either `epd7in5b` for V1 or `epd7in5b_V2` for V2/V3, matching Waveshare's official Python driver names.
 
-Use a full color refresh for quote changes. Some current Waveshare material mentions black/white partial refresh, while its Universal Driver HAT compatibility table marks the 7.5-inch (B) as not supporting partial refresh. More importantly, changing red text requires a full three-color update. The design therefore does not depend on partial refresh.
+Use a standard full refresh for every quote change. Hardware UAT exhausted the official partial helper, corrected buffer polarity, inverse scrubbing, and explicit old/new controller-plane writes; the panel still transitioned `A → inverse(A) → A+B`. The driver's fast mode was also rejected because it still presents a full-screen flash. This installed V3 panel therefore has no acceptable intermediate refresh mode.
 
-Waveshare recommends at least 180 seconds between refreshes and requires the panel to be put to sleep or powered off when it is not refreshing. A default quote interval of **60 minutes** is conservative. Buttons may request an immediate full refresh.
+Waveshare recommends at least 180 seconds between refreshes and requires the panel to be put to sleep or powered off when it is not refreshing. The operator-approved two-minute active rotation is a hardware-trial setting. Rotary-encoder turns request an immediate standard full refresh.
 
 ## Parts
 
@@ -41,7 +41,8 @@ Required:
 - Raspberry Pi Zero 2 W with a soldered 40-pin male header; an original Zero W is acceptable.
 - Reliable 5 V micro-USB supply. The official 12.5 W Zero supply is ample.
 - microSD card.
-- Two normally-open momentary push buttons.
+- One mechanical incremental rotary encoder with quadrature A/B outputs and an integrated normally-open push switch.
+- One three-wire PIR motion sensor whose digital output is guaranteed to be 3.3 V safe.
 - Hookup wire and a frame/enclosure that does not press on the glass or bend the flex cable sharply.
 
 Useful but optional:
@@ -71,34 +72,49 @@ For a cabled installation, use the following Waveshare mapping. `BCM` numbers ar
 
 The current Universal Driver HAT exposes `PWR`. If an older board has only eight signal pins, omit `PWR` and use the matching older Waveshare configuration. Do not power the HAT separately while it is also powered through the Pi header.
 
-### Buttons
+### Rotary encoder and PIR motion sensor
 
-Wire each normally-open button between a GPIO and ground. Use the Pi's internal pull-ups, so pressed is active-low.
+Use a mechanical incremental rotary encoder with A/B quadrature outputs and a push switch. Connect the encoder common and one side of its push switch to ground and use the Pi's internal pull-ups. The encoder replaces the separate Previous and Next buttons.
 
-| Action | BCM | Physical pin | Other button terminal |
-|---|---:|---:|---:|
-| Previous | 5 | 29 | GND, physical pin 30 |
-| Next | 6 | 31 | GND, physical pin 34 |
+| Signal | BCM | Physical pin | Other connection |
+|---|---:|---:|---|
+| Encoder A | 5 | 29 | Encoder common to GND, physical pin 30 |
+| Encoder B | 6 | 31 | Encoder common to GND, physical pin 30 |
+| Encoder push switch | 13 | 33 | GND, physical pin 34 |
+| PIR OUT | 16 | 36 | — |
+| PIR VCC | — | 2 (5 V) | — |
+| PIR GND | — | 39 | — |
 
-Use 75 ms software debounce. A button press changes the quote, performs one full refresh, and resets the automatic rotation timer. Presses received while the panel is busy are coalesced to the latest requested destination rather than starting unbounded refreshes.
+Only connect PIR OUT directly after verifying from the selected sensor's datasheet or a meter that its high level does not exceed the Pi's 3.3 V GPIO limit. Use a level shifter if it can output 5 V.
+
+One complete clockwise detent requests Next and one complete counter-clockwise detent requests Previous. Swap the A/B assignments if the installed encoder runs backward. Decode the quadrature sequence and emit only complete detents so contact bounce or invalid transitions do not produce extra navigation. A turn wraps through catalog order, persists the selected ID, resets the automatic rotation timer, and performs a standard full refresh. Turns received while the panel is busy are coalesced to the final requested destination rather than starting unbounded refreshes.
+
+Initialize and debounce the encoder push switch. A press performs a standard full refresh and toggles between the quote and settings screens. In settings, rotation adjusts minutes per quote (`n`), and another press fully refreshes back to the quote.
+
+A PIR reports recent motion, not reliable room occupancy. Treat the room as active from the latest motion event through a configurable inactivity grace period, defaulting to 15 minutes. Automatic quote rotation is paused at startup and whenever that grace period expires. Motion restarts a full rotation interval; it does not immediately change the quote. Content polling and manual encoder navigation continue while automatic rotation is paused, and the e-ink panel retains its current image.
 
 ## Pico W alternative
 
 A Pico W is electrically capable. One valid SPI0 mapping to the Universal Driver HAT is:
 
-| Driver HAT | Pico W GPIO | Pico physical pin |
+| Signal | Pico W GPIO | Pico physical pin |
 |---|---:|---:|
-| VCC | 3V3 OUT | 36 |
-| GND | GND | 38 |
-| DIN | GP19 / SPI0 TX | 25 |
-| CLK | GP18 / SPI0 SCK | 24 |
-| CS | GP17 | 22 |
-| DC | GP20 | 26 |
-| RST | GP21 | 27 |
-| BUSY | GP22 | 29 |
-| PWR | GP16 | 21 |
-| Previous button | GP14 to GND | 19 |
-| Next button | GP15 to GND | 20 |
+| Driver HAT VCC | 3V3 OUT | 36 |
+| Driver HAT GND | GND | 38 |
+| Driver HAT DIN | GP19 / SPI0 TX | 25 |
+| Driver HAT CLK | GP18 / SPI0 SCK | 24 |
+| Driver HAT CS | GP17 | 22 |
+| Driver HAT DC | GP20 | 26 |
+| Driver HAT RST | GP21 | 27 |
+| Driver HAT BUSY | GP22 | 29 |
+| Driver HAT PWR | GP16 | 21 |
+| Encoder A | GP14 | 19 |
+| Encoder B | GP15 | 20 |
+| Encoder common | GND | 18 |
+| Encoder push switch | GP13 and GND | 17 and 18 |
+| PIR OUT | GP12 | 16 |
+| PIR VCC | VBUS (5 V) | 40 |
+| PIR GND | GND | 38 |
 
 Do not choose this architecture for local rich-text rendering. An 800×480 one-bit plane is 48,000 bytes; black and red planes consume 96,000 bytes before markup, fonts, layout, Wi-Fi, TLS, and runtime overhead. The Pico W has 264 kB SRAM and 2 MB flash. A practical Pico design would have a remote process pre-render each quote into two raw bitplanes; the Pico would only download/cache a manifest and stream the selected planes to the display. That adds a hosted renderer and a custom firmware update path, so it is more complex overall.
 
@@ -195,13 +211,14 @@ Bundle a font family with regular, italic, bold, and bold-italic faces. Do not d
 
 Use a landscape 800×480 canvas for V2/V3, or 640×384 for V1. Rotation (`0` or `180`) is configurable for the physical frame.
 
-The layout has three regions:
+The layout has four regions:
 
-1. Quote: largest text, vertically balanced in the available space.
-2. Attribution/source: smaller text immediately below the quote, separated by an em dash or line break.
-3. Explanation: optional smaller text at the bottom, separated by a thin rule.
+1. Quote: largest text, horizontally centered without decorative quotation marks, normally wrapped, and vertically balanced in the available space.
+2. Attribution/source: smaller, right-aligned text immediately below the quote, separated by an em dash or line break.
+3. Explanation: optional smaller, right-aligned text near the bottom, separated by a thin rule.
+4. Status: last motion and last refresh in small text on one footer line.
 
-The renderer tries quote font sizes from largest to smallest while reserving measured space for all present metadata. It must never crop or silently truncate. If an entry cannot fit at the configured minimum sizes, it is invalid: log its `id`, skip it, and continue to the next valid quote. A desktop preview command writes a PNG using the same layout before content is deployed.
+The renderer measures content and tries quote font sizes from largest to smallest while reserving space for all present metadata. Short quotes therefore use larger type and longer quotes scale down deterministically. It must never crop or silently truncate. If an entry cannot fit at the configured minimum size, it is invalid: log its `id`, skip it, and continue to the next valid quote. A desktop preview command writes a PNG using the same layout before content is deployed.
 
 ## Software shape
 
@@ -212,7 +229,7 @@ apps/
   frame/
     app.py            # timer, GitHub polling, cache, display lifecycle
     display.py        # V1 and V2/V3 Waveshare adapters
-    buttons.py        # active-low input events and debounce
+    inputs.py         # rotary encoder, reserved push switch, and PIR events
     state.py          # atomic persistent device state
   studio/
     app.py            # local HTTP application
@@ -266,14 +283,16 @@ Use the local system Git client with argument arrays and the user's existing SSH
 
 ## Runtime behavior
 
-1. Boot under `systemd`.
+1. Boot under the enabled `epigraph-frame.service`; the initial hardware-first deployment uses a lingering user systemd manager so no interactive login is required.
 2. Load configuration, cached quote set, and last displayed quote ID.
 3. Start from cache immediately if present; network availability must not block boot.
 4. Fetch `quotes.yaml` through GitHub's repository contents endpoint without authentication. Send GitHub's raw media type, API version, a descriptive `User-Agent`, and the cached `ETag` through `If-None-Match`. On `304 Not Modified`, retain the current snapshot without reparsing. On `200`, safely parse YAML, validate the schema version, allowed fields, unique IDs, required text, boolean values, and markup, then write the new snapshot atomically. On fetch, rate-limit, or whole-file validation failure, keep the previous snapshot and honor GitHub's retry/reset headers.
 5. Render and show the current quote. Put the panel to sleep after BUSY clears.
 6. Refresh content every 15 minutes. Four unauthenticated requests per hour remain below GitHub's documented limit of 60 requests per hour for public data.
-7. Rotate every 60 minutes by default. Previous/next wrap, persist the selected ID, and reset the timer.
-8. If a changed feed removes the current ID, select the next valid item by the old position; if no content is usable, keep the last physical image and log the error.
+7. Rotate every two minutes by default only while the PIR presence gate is active. At startup or after 15 minutes without motion by default, pause the automatic timer without changing the retained image. On motion, start a new full rotation interval rather than immediately changing the quote.
+8. Clockwise/counter-clockwise encoder detents select next/previous and wrap in catalog order. Manual navigation remains available while automatic rotation is paused, persists the selected ID, resets the timer baseline, and performs a standard full refresh.
+9. Perform a standard full refresh for every quote change and every transition into or out of settings.
+10. If a changed feed removes the current ID, select the next valid item by the old position; if no content is usable, keep the last physical image and log the error.
 
 Panel operations have a bounded BUSY timeout. A timeout causes one driver reset and retry; a second failure leaves the last physical image intact and reports a service error. Do not loop refreshes indefinitely.
 
@@ -287,13 +306,18 @@ github_repository = "epigraph-catalog"
 github_ref = "main"
 github_content_path = "quotes.yaml"
 panel = "7in5b_v2"       # use 7in5b_v1 only after checking the label
-rotation_minutes = 60
+rotation_minutes = 2
 content_refresh_minutes = 15
 rotation_degrees = 0
-previous_gpio = 5
-next_gpio = 6
+encoder_a_gpio = 5
+encoder_b_gpio = 6
+encoder_switch_gpio = 13 # press: settings/quote
+pir_gpio = 16
+pir_inactivity_minutes = 15
 busy_timeout_seconds = 45
 ```
+
+The initial hardware-first script persists on-device changes to `rotation_minutes` and the selected quote under the invoking user's local state directory. Legacy `full_refresh_every` state is ignored. The later managed service must give its runtime user a stable writable state directory.
 
 The install script copies `config.example.toml` only when no configuration exists, so updates cannot overwrite local settings. The public content repository requires no access token, credentials file, or Git checkout on the display. Do not add a GitHub token unless the repository is intentionally made private in a future design.
 
@@ -307,6 +331,8 @@ Initial installation:
 2. Boot, enable SPI, and run the exact official Waveshare sample for the identified panel revision. Do not proceed until a black/red/white test image completes and the driver sleeps cleanly.
 3. Install the application under `/opt/epigraph`, create a dedicated unprivileged `epigraph` user with only the required GPIO/SPI group access, create a virtual environment, and enable `epigraph-frame.service`.
 4. Fetch the current `quotes.yaml` file and render every enabled quote with the preview command before enabling rotation.
+
+The initial hardware-first SSH updater installs the runtime scripts under `~/epigraph/scripts`, installs and enables a user unit under `~/.config/systemd/user`, and enables logind lingering through remote `sudo`. Every successful deployment restarts the managed frame and verifies that it remains active; activation failure restores the previous deployment and service state. A full Pi reboot is unnecessary for a normal script update. The `/opt/epigraph` release layout above remains the later production cutover.
 
 Application updates are manual and explicit over SSH:
 
@@ -326,7 +352,7 @@ Routine quote edits happen in Epigraph Studio and reach GitHub only through Publ
 - Confirm panel and driver board revision labels.
 - Official Waveshare sample renders black, red, and white correctly.
 - Panel enters sleep after refresh and retains the image.
-- Previous and next electrical inputs read reliably without false presses.
+- Clockwise and counter-clockwise encoder detents read reliably as exactly one event, the push switch produces no action, and PIR motion/inactivity transitions are stable.
 
 ### 2. Shared quote package
 
@@ -348,11 +374,12 @@ Routine quote edits happen in Epigraph Studio and reach GitHub only through Publ
 
 ### 4. Device application
 
-- Device boots directly to the last valid cached quote without a network connection.
+- Device boots directly through the enabled systemd unit to the last valid cached quote without a network connection.
 - A valid `quotes.yaml` publish is picked up without redeploying code.
 - A malformed or unavailable content file does not erase the cache or the display.
-- Timer cycles and wraps in YAML list order.
-- Previous/next wrap, reset the timer, survive process restart, and do not create an unbounded refresh queue.
+- The timer cycles and wraps in YAML list order only while the PIR presence gate is active.
+- Clockwise/counter-clockwise detents wrap, reset the timer baseline, survive process restart, and do not create an unbounded refresh queue.
+- PIR inactivity pauses automatic rotation without blanking the retained image; motion starts a full interval, and manual navigation still works while paused.
 - Every completed update sleeps/powers down the panel.
 
 ### 5. Operational handoff
@@ -361,20 +388,24 @@ Routine quote edits happen in Epigraph Studio and reach GitHub only through Publ
 - Configuration survives an application update.
 - Failed application update rolls back to the prior release.
 - Local Git authentication works without storing credentials in the web application.
-- The frame protects the glass and flex cable, leaves button access, and permits SD/power maintenance.
+- The frame protects the glass and flex cable, exposes the encoder, gives the PIR a clear view of the room, and permits SD/power maintenance.
 
 ## Risks and decisions still to confirm during the hardware proof
 
 | Item | Status | Risk / verification owner |
 |---|---|---|
 | Raw panel needs a driver HAT | Confirmed | Waveshare product documentation. |
-| Exact panel revision | Blocked on physical label | Owner photographs label/flex code; implementer selects V1 or V2/V3 driver. |
-| 800×480 resolution | Risky until label check | Indexed listing says 800×480, but Waveshare documents an older 640×384 V1. |
-| Partial refresh | Intentionally not used | Source material differs and red updates require full refresh anyway. |
+| Exact panel revision | Confirmed: V3 | Rear label and successful V2-compatible Waveshare sample. |
+| 800×480 resolution | Confirmed | Installed V3 panel and rendered 800×480 hardware diagnostic. |
+| Full-screen partial refresh | Unsupported on installed panel | Official and explicit-plane partial paths both ended at `A+B`; standard full refresh is required for every quote change. |
 | Public quote repository | Confirmed | Quotes and commit history are public; never commit private material or credentials. |
 | Local publisher | Single writer | Publishing refuses remote divergence instead of attempting an automatic merge. |
 | Controller | Recommended: Zero 2 W | Original Zero W acceptable; Pico W only with remote pre-rendering. |
-| Rotation interval | Assumed 60 minutes | Configurable; must remain at least 3 minutes per manufacturer guidance. |
+| Rotation interval | Confirmed: 2 minutes | Each active rotation performs a standard full refresh; treat the two-minute interval as a hardware trial against Waveshare's longer refresh guidance. |
+| Encoder direction and detents | Confirmed by operator | Hardware diagnostic reports clockwise/counter-clockwise and complete detents correctly. |
+| Encoder push action | Confirmed | Press toggles settings/quote with a standard full refresh; rotation in settings adjusts `n`. |
+| PIR inactivity grace | Assumed 15 minutes | Configurable; tune in the installed room because PIR detects motion, not continued presence. |
+| PIR electrical output | Blocked on selected sensor | Verify OUT is 3.3 V safe before connecting it to the Pi. |
 
 ## Sources
 
@@ -386,6 +417,7 @@ Primary sources:
 - [Waveshare official e-Paper driver repository](https://github.com/waveshareteam/e-Paper/tree/master/RaspberryPi_JetsonNano/python/lib/waveshare_epd): V1 and V2 Python driver modules.
 - [Raspberry Pi Zero 2 W specification](https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/): CPU, 512 MB RAM, Wi-Fi, and 40-pin footprint.
 - [Raspberry Pi Pico W specification](https://www.raspberrypi.com/products/raspberry-pi-pico/): RP2040, 264 kB SRAM, 2 MB flash, Wi-Fi, and SPI capabilities.
+- [GPIO Zero input-device API](https://gpiozero.readthedocs.io/en/stable/api_input.html): BCM numbering, rotary-encoder A/B/common wiring and directional events, button pull-up/debounce behavior, and typical PIR VCC/OUT/GND wiring and motion events.
 - [GitHub repository contents endpoint](https://docs.github.com/en/rest/repos/contents#get-repository-content): public content retrieval, raw media response, conditional `304` response, and endpoint shape.
 - [GitHub REST rate limits](https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api): unauthenticated public-data limit of 60 requests per hour and rate-limit response headers.
 - [GitHub large-file guidance](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github): file limits, repository-size guidance, and Git's unsuitability as a database backup mechanism.

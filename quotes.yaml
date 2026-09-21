@@ -1,7 +1,7 @@
 version: 1
 quotes:
   - id: kathryn-schulz-until-we-know-we-are-wrong
-    quote: "Until we know we are wrong, being **wrong** feels exactly like being **right**."
+    quote: "Until we _know_ we are wrong, being **wrong** feels exactly like being ==**right**==."
     attribution: "Kathryn Schulz"
     source: "Being Wrong: Adventures in the Margin of Error"
     explanation: "Summarized in How Minds Change by David McRaney"
@@ -10,6 +10,9 @@ quotes:
     quote: "Properly speaking, there is no certainty; there are only people who are certain."
     attribution: "Charles Renouvier"
     source: "Essais de Critique Générale"
+    enabled: true
+  - id: heidi-prieb-to-lobe
+    quote: "To love someone long-term is to attend a thousand funerals of the people they used to be. The people they’re too exhausted to be any longer.\nThe people they don’t recognise inside themselves anymore. The people they grew out of, the people they never ended up growing into.\nWe so badly want the people we love to get their spark back when it burns out; to become speedily found when they are lost. \nBut it is not our job to hold anyone accountable to the people they used to be. It is our job to travel with them between each version and to honour what emerges along the way. \nSometimes it will be an even more luminescent flame. Sometimes it will be a flicker that disappears and temporarily floods the room with a perfect and necessary darkness. —Heidi Priebe,"
     enabled: true
   - id: stuart-halloway-act-a-little-less-think-a
     quote: "Act a little less, think a little more."
@@ -60,7 +63,7 @@ quotes:
     attribution: "Mother Teresa"
     enabled: true
   - id: george-b-p-box-all-models-are-wrong-but-some
-    quote: "All models are wrong, but some are useful."
+    quote: "All models are wrong, but some are _useful+."
     attribution: "George B. P. Box"
     enabled: true
   - id: pema-chodron-the-future-is-completely-open-and
@@ -243,4 +246,14 @@ quotes:
     quote: "Do something, not everything."
     attribution: "David Epstein"
     source: "Inside the Box"
+    enabled: true
+  - id: upton-sinclair-get-someone-to-understand
+    quote: "It is difficult to get a man to understand something, when his salary depends on his not understanding it."
+    attribution: "Upton Sinclair"
+    source: "https://www.youtube.com/watch?v=pauBYSQ1K_c"
+    enabled: true
+  - id: shaw-indifferent
+    quote: "the worst sin towards our fellow creatures is not to hate them, but to be indifferent to them. That is the essence of inhumanity."
+    attribution: "George Bernard Shaw"
+    source: "Midewise, by Nicholas Epley"
     enabled: true

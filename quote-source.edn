@@ -1,0 +1,609 @@
+{:pages-and-blocks
+ [{:page {:block/title "015-advice"},
+   :blocks
+   [{:block/title
+     "To love someone long-term is to attend a thousand funerals of the people they used to be. The people they’re too exhausted to be any longer.\nThe people they don’t recognise inside themselves anymore. The people they grew out of, the people they never ended up growing into.\nWe so badly want the people we love to get their spark back when it burns out; to become speedily found when they are lost. \nBut it is not our job to hold anyone accountable to the people they used to be. It is our job to travel with them between each version and to honour what emerges along the way. \nSometimes it will be an even more luminescent flame. Sometimes it will be a flicker that disappears and temporarily floods the room with a perfect and necessary darkness. —Heidi Priebe",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties {:user.property/epigraph_display-KSB3dHhj "yes"
+                        :logseq.property.node/display-type :quote}}]}
+  {:page {:block/title "018-free-will"},
+   :blocks
+   [{:block/title
+     "He says: All of our behavior can be traced to biological events about which we have no conscious knowledge: this has always suggested that free will is an illusion. —The Moral Landscape",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties {:logseq.property.node/display-type :quote}}
+    {:block/title
+     "The intention to do one thing and not another does not originate in consciousness-rather, it *appears* in consciousness, as does any thought or impulse that might oppose it. — Free Will, Sam Harris",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties {:logseq.property.node/display-type :quote}}
+    {:block/title
+     "SnowBorn1 says: I think quantum mechanics, double slit experiment... etc, shows some uncertainty. In determinism everything is certain, but if there is uncertainty it opens the door for free will. @SnowBorn1",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties {:logseq.property.node/display-type :quote}}
+    {:block/title
+     "Cindy Rays writes: I am not sure about free will. As I get older I see that a lot of what I do is governed by pre existing patterns or habits. On the other hand, I go to therapy every month and work on having different thought patterns and responses than my habitual thoughts and responses—that certainly seems like free will.\nMaybe the answer is just that there is less free will operating in my life than I might have thought. @cindyray2817",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties {:logseq.property.node/display-type :quote}}
+    {:block/title
+     "Russ R. Writes: Absolutely. The human body may be driven by \"machines\" as you say, but those machines are constantly being tweaked, in my opinion. The tweaking are the decisions we make that then become machines. However I believe those machines are what we might also call habits, and we definitely are choosing which habits to have. Some habits drive us (addictions) that we have given over control. But through hard work we can still change our response. They say an alcoholic is always an alcoholic that is making the choice to not drink.",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties {:logseq.property.node/display-type :quote}}
+    {:block/title
+     "Josh R says: I honestly have no idea, I feel like both arguments are possible.  I look at it as if I myself make decisions after thinking them through and weighing the options.  But those decisions are also based off of electrical signals and/or chemicals in my brain, and my brain basically just responds to things how it’s been trained. Any decision I make is based off of emotions and what I think is best....  So am I actually making the decisions I think I am or am I just following what my brain is saying to do and thinking I’m fully making decisions? I’m going to say I’m leaning towards having free will but I don’t think it’s an ultimate free will, I think it’s just that our brains out so complex that we are able to recalculate things as they happen and change quickly as well as over time.",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties {:logseq.property.node/display-type :quote}}
+    {:block/title
+     "[I know a woman who would say:] \"I do not believe in free will, but I act as though it exists, [but] I treat *others* as if it does not.” Meaning, [this woman] wants to act as though she can make choices, but she will treat others as though they don’t have free will, and therefore she has more compassion, or understanding, or at least [gives others the] benefit of the doubt — [because] they can’t control how they act. — Mike Maughan, No Stupid Questions",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties {:logseq.property.node/display-type :quote}}]}
+  {:page {:block/title "019-animal-needs"},
+   :blocks
+   [{:block/title
+     "here is an exherb from Leopold's book describing his concept of a \"land ethic\": The land ethic simply enlarges the boundaries of the community to include soils, waters, plants, and animals, or collectively: the land. This sounds simple: do we not already sing our love for and obligation to the land of the free and the home of the brave? Yes, but just what and whom do we love? Certainly not the soil, which we are sending helter-skelter down river. Certainly not the waters, which we assume have no function except to turn turbines, float barges, and carry off sewage. Certainly not the plants, of which we exterminate whole communities without batting an eye. Certainly not the animals, of which we have already extirpated many of the largest and most beautiful species. A land ethic of course cannot prevent the alteration, management, and use of these 'resources,' but it does affirm their right to continued existence, and, at least in spots, their continued existence in a natural state. In short, a land ethic changes the role of Homo sapiens from conqueror of the land-community to plain member and citizen of it. It implies respect for his fellow-members, and also respect for the community as such.",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties {:logseq.property.node/display-type :quote}}]}
+  {:page {:block/title "021-skeptisism"},
+   :blocks
+   [{:block/title
+     "Cindy R says: I think you need at least a baseline amount of skepticism, to protect you from the scams and conspiracy theories of the world. But you also need to figure out when is the time to set skepticism aside and trust in things. It's ironic that people who have no skepticism believe all of the conspiracy theories, but then people with too much skepticism believe in a different set of problematic things, like vaccines are bad or scientific research isn't legitimate. Clearly there's a need for moderation and balance.",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties {:logseq.property.node/display-type :quote}}
+    {:block/title
+     "Josh R says: I think you should be a medium amount of skeptical.  Because if you aren’t at all [skeptical] then you’ll basically believe anything, but if you’re too skeptical you’ll believe nothing, to the point that ([as with] conspiracy theories) you’ll  [believe anything].  I personally feel like I’m too skeptical by default and have gotten more as I’ve gotten older, but I’m pretty aware of it and try to not let it run wild.  Because it’s exciting to get caught up in ideas (like conspiracy theories) that coooould be true, but it’s really unhealthy to do that.... That isn’t really even helpful, because you have to be able to exist in said society, and hopefully be able to be happy with it.",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties {:logseq.property.node/display-type :quote}}]}
+  {:page {:build/journal 20190624},
+   :blocks
+   [{:block/title
+     "Act a little less, think a little more. — [[Stuart Halloway]] #quote #card",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties
+     {:user.property/epigraph_display-KSB3dHhj "yes"
+      :logseq.property.node/display-type :quote}}]}
+  {:page {:build/journal 20230902},
+   :blocks
+   [{:block/title
+     "No matter how tall your grandfather was, you'll have to do your own growing. — [[anonymous]]  #quote",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties
+     {:user.property/epigraph_display-KSB3dHhj "yes",
+      :logseq.property.node/display-type :quote}}]}
+  {:page {:build/journal 20230903},
+   :blocks
+   [{:block/title
+     "Some people think the ideal occupation is one that doesn't keep them occupied. — [[anonymous]]  #quote",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties
+     {:user.property/epigraph_display-KSB3dHhj "yes",
+      :logseq.property.node/display-type :quote}}
+    {:block/title
+     "We are all failures — at least the best of us are. — [[J. M. Barrie]] #quote #failure #success #try #card",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties
+     {:user.property/epigraph_display-KSB3dHhj "yes",
+      :logseq.property.node/display-type :quote}}
+    {:block/title
+     "There is no man living who isn't capable of doing more than he thinks he can do. — [[Henry Ford]] #quote #success",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties
+     {:user.property/epigraph_display-KSB3dHhj "yes",
+      :logseq.property.node/display-type :quote}}]}
+  {:page {:build/journal 20230910},
+   :blocks
+   [{:block/title
+     "It never ceases to amaze me: we all love ourselves more than other people, but care more about their opinion than our own. — [[Marcus Aurelius]] #quote #self-respect #judgement",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties
+     {:user.property/epigraph_display-KSB3dHhj "yes",
+      :logseq.property.node/display-type :quote}}]}
+  {:page {:build/journal 20230911},
+   :blocks
+   [{:block/title
+     "Ideas won't work unless you do. — [[anonymous]]  #quote",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties
+     {:user.property/epigraph_display-KSB3dHhj "yes",
+      :logseq.property.node/display-type :quote}}
+    {:block/title
+     "The man who says \"It can't be done\" is interrupted by the man who is doing it. — [[anonymous]]  #quote",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties
+     {:user.property/epigraph_display-KSB3dHhj "yes",
+      :logseq.property.node/display-type :quote}}
+    {:block/title
+     "Act the way you would like to be and soon you will be the way you act. — [[Dr. George W. Crane]] #quote",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties
+     {:user.property/epigraph_display-KSB3dHhj "yes",
+      :logseq.property.node/display-type :quote}}
+    {:block/title
+     "The reward of a thing well done is to have done it. — [[Ralph Waldo Emerson]] #quote",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties
+     {:user.property/epigraph_display-KSB3dHhj "yes",
+      :logseq.property.node/display-type :quote}}]}
+  {:page {:build/journal 20230912},
+   :blocks
+   [{:block/title
+     "Nothing in life is to be feared, it is only to be understood. Now is the time to understand more, so that we may fear less. — [[Marie Curie]] #quote",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties
+     {:user.property/epigraph_display-KSB3dHhj "yes",
+      :logseq.property.node/display-type :quote}}]}
+  {:page {:build/journal 20230914},
+   :blocks
+   [{:block/title
+     "We cannot do great things on this Earth, only small things with great love. — [[Mother Teresa]]",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties
+     {:user.property/epigraph_display-KSB3dHhj "yes",
+      :logseq.property.node/display-type :quote}}]}
+  {:page {:build/journal 20231130},
+   :blocks
+   [{:block/title
+     "All models are wrong, but some are _useful_. — [[George B. P. Box]]  #quote",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties
+     {:user.property/epigraph_display-KSB3dHhj "yes",
+      :logseq.property.node/display-type :quote}}]}
+  {:page {:block/title "2024 Christmas Book Presentation"},
+   :blocks
+   [{:block/title
+     "Until we _know_ we are **_wrong_**, being **_wrong_** feels exactly like being ==**_wrong_**==. — David McRaney, *How Minds Change* (summarizing Kathryn Schulz)",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties {:user.property/epigraph_display-KSB3dHhj "yes" 
+                        :logseq.property.node/display-type :quote}}
+    {:block/title
+     "I will argue..., that questions about values—about meaning, morality, and life's larger purpose—are really questions about the well-being of conscious creatures. [click] Values, therefore, translate into facts that can be scientifically understood.",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties {:logseq.property.node/display-type :quote}}
+    {:block/title
+     "One of my critics put the concern this way: \"Morals are relative to the time and place in which they appear. If you do not already accept well-being as a value, then there seems to be no argument for why one should promote well-being.\" As proof of this assertion, he observed that I would be unable to convince the Taliban that they value the wrong things. By this standard, however, the truths of science are also \"relative to the time and place in which they appear,\" and there is no way to convince someone who does not value empirical evidence that he should value it. Despite 150 years of working at it, we still can't convince a majority of Americans that evolution is a fact. Does this mean biology isn't a proper science?",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties {:logseq.property.node/display-type :quote}}
+    {:block/title
+     "Without potential consequences at the level of experience—happiness, suffering, joy, despair, etc.—all talk of value is empty. Therefore, to say that an act is morally necessary, or evil, or blameless, is to make (tacit) claims about its consequences in the lives of conscious creatures.",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties {:logseq.property.node/display-type :quote}}
+    {:block/title
+     "I will argue, however, that questions about values—about meaning, morality, and life's larger purpose—are really questions about the well-being of conscious creatures. Values, therefore, translate into facts that can be scientifically understood.",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties
+     {:user.property/author-rMuY3sVf "[[Harris, Sam]]",
+      :logseq.property.node/display-type :quote}}
+    {:block/title
+     "[W] here does conscious reasoning come into the picture? It is an attempt to justify the choice after it has been made. And it is, after all, the only way we have to try to explain to other people why we made a particular decision. But given our lack of access to the brain processes involved, our justification is often spurious: a post-hoc rationalization, or even a confabulation—a “story” born of the confusion between imagination and memory. #quote #card",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties {:logseq.property.node/display-type :quote}}]}
+  {:page {:build/journal 20240102},
+   :blocks
+   [{:block/title
+     "The future is completely open, and we are writing it moment to moment. — [[Pema Chödrön]] #quote",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties
+     {:user.property/epigraph_display-KSB3dHhj "yes",
+      :logseq.property.node/display-type :quote}}]}
+  {:page {:build/journal 20240115},
+   :blocks
+   [{:block/title
+     "The whole problem with the world is that fools and fanatics are always so certain of themselves, but wiser people are so full of doubts. — [[Bertrand Russell]] #quote #certainty #philosophy",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties
+     {:user.property/epigraph_display-KSB3dHhj "yes",
+      :logseq.property.node/display-type :quote}}]}
+  {:page {:build/journal 20240625},
+   :blocks
+   [{:block/title
+     "Until we know we are wrong, being wrong feels exactly like being right. — [[Kathryn Schulz]] #quote #paraphrased",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties
+     {:user.property/epigraph_display-KSB3dHhj "yes",
+      :logseq.property.node/display-type :quote}}]}
+  {:page {:build/journal 20240707},
+   :blocks
+   [{:block/title
+     "Holding onto anger is like drinking poison and hoping someone else will die. — [no stupid questions podcast episode 139](https://freakonomics.com/podcast/why-do-we-get-angry/) #quote",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties
+     {:user.property/epigraph_display-KSB3dHhj "yes",
+      :logseq.property.node/display-type :quote}}]}
+  {:page {:build/journal 20241028},
+   :blocks
+   [{:block/title
+     "Properly speaking, there is no certainty; there are only people who are certain. — [[CHARLES RENOUVIER]] , ESSAIS DE CRITIQUE GÉNÉRAL #quote",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties {:logseq.property.node/display-type :quote}}]}
+  {:page {:build/journal 20241111},
+   :blocks
+   [{:block/title
+     "In order to stop the worse from happening you first need to believe the worse _can_ happen. — [[Steve Shives ]] #quote",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties
+     {:user.property/epigraph_display-KSB3dHhj "yes",
+      :logseq.property.node/display-type :quote}}]}
+  {:page {:build/journal 20241122},
+   :blocks
+   [{:block/title
+     "Often, the most striking and innovative solutions come from realizing that your conceot of the plan was **==wrong==**.",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties {:user.property/epigraph_display-KSB3dHhj "yes"
+                        :logseq.property.node/display-type :quote}}]}
+  {:page {:build/journal 20241125},
+   :blocks
+   [{:block/title
+     "Science is more than a body of knowledge. It is a way of thinking; a way of skeptically interrogating the universe with a fine understanding of human fallibility.\n\nIf we are not able to ask skeptical questions, to interrogate those who tell us that something is true, to be skeptical of those in authority, then, we are up for grabs for the next charlatan (political or religious) who comes rambling along. #card #quote",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties {:logseq.property.node/display-type :quote}}]}
+  {:page {:build/journal 20241126},
+   :blocks
+   [{:block/title
+     "[referencing an image of David Bowie, Frank Sinatra, Jane Fonda, Bill Gages, and Jimi Hendrix]\nThey’re a reminder that sometimes we screw up, and sometimes the system screws with us, but if you live your life with enough passion and boldness, then that’s what you’ll be remembered for. Not the crap that happened along the way. — [[Nikki Erlick]] from [[The Measure]]",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties {:logseq.property.node/display-type :quote}}]}
+  {:page {:build/journal 20241228},
+   :blocks
+   [{:block/title
+     "No one is more hated than he who speaks the truth. #quote #card",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties {:logseq.property.node/display-type :quote}}
+    {:block/title
+     "A wise man speaks because he has something to say; a fool because he has to say something. #quote #card",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties
+     {:user.property/epigraph_display-KSB3dHhj "yes",
+      :logseq.property.node/display-type :quote}}
+    {:block/title
+     "The right question is usually more important than the right answer. #quote #card",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties
+     {:user.property/epigraph_display-KSB3dHhj "yes",
+      :logseq.property.node/display-type :quote}}
+    {:block/title
+     "Good people do not need laws to tell them to act responsibly, while bad people will find a way around the laws. #quote #card",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties
+     {:user.property/epigraph_display-KSB3dHhj "yes",
+      :logseq.property.node/display-type :quote}}]}
+  {:page {:build/journal 20250103},
+   :blocks
+   [{:block/title
+     "If you're depressed, remember: feeling well adjusted in a deeply unjust, cruel society isn't necassarily something to be proud of. (https://www.threads.net/@mark.hb/post/DEWLyNTv2GF?xmt=AQGzhgx60MJMcHpCgd7IqeyQ2i8ZDx0IE9UbTN2gYhz7JA) #card",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties {:logseq.property.node/display-type :quote}}
+    {:block/title
+     "Never forget that humanity invented a fake resource and then let a tiny portion of the population use that fake resource to claim ownership of all of the real resources on the planet, hoard them, and then force the majority of people to sell the majority of their lives in service to them, and in return the masses *might* be given enough of the actual resources they need to survive. And yet the people continue to go along with this, they keep pretending the fake resource  is real. They've been successfully trained and gaslit into believing that the world could not function any other way. Programmed so thoroughly over multiple generations that the majority of people won't even question whether or not the world could or should be different. They don't realize that war is being waged against them. They no longer realize that they are slaves and anytime you try to tell them they just parrot the programming they've been fed their whole lives. —debateherofficial [instagram](https://www.instagram.com/reel/DEEYZrnt59P/) #card",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties
+     {:user.property/epigraph_display-KSB3dHhj "yes",
+      :logseq.property.node/display-type :quote}}]}
+  {:page {:build/journal 20250107},
+   :blocks
+   [{:block/title
+     "The problem with left-leaning media is they're intrinsically more strict with their propaganda to only using verifiable sources so it's really hard to poke holes in their ideology and arguments in comparison to a lot of low quality rightwing content.\nThat makes attacking their points with fact checkers not very effective unless the fact checkers use misinformation tactics as well.\nIn essence people on the right have to work harder and more creatively to push their agendas as statistics and studies frustratingly aren't usually on our side.",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties {:logseq.property.node/display-type :quote}}]}
+  {:page {:build/journal 20250214},
+   :blocks
+   [{:block/title
+     "Here is the information that will help you prepare for the coding challenge. I will schedule it according to your availability. Have a great day!\nTo prepare, we recommend brushing up on your ability to design and implement solutions for open-ended problems. This interview will involve live coding, on CoderPad. The focus will be on designing a clean and logical solution, writing efficient and readable code, and demonstrating your debugging skills. Expect to discuss your decisions, such as why you chose certain data structures or APIs, as we value understanding the reasoning behind your approach. While the problem is open-ended with no single \"correct\" answer, it’s helpful to think about scalability, usability, and error handling in your design. A solid grasp of parsing strings, working with collections (e.g., maps, lists), and basic algorithmic complexity will also be beneficial. Most importantly, stay calm, think aloud, and don’t hesitate to ask clarifying questions!Remind\nyou that this is an open ended problem, there’s no right or wrong answer, and that I’ll be asking questions about their approach throughout the interview.\nI would focus on [tree](((67ae8595-74d2-460f-9dc6-059f8e88e01b))), parser, big O, [array](((67ae8595-982c-455e-90bd-765fea9cc515))), [linked list](((67ae8595-8c84-4785-ac65-ac20f5da540b))) questions. However, the interviewers may change the questions, but they should all be focused on CS fundamentals, algorithms and data structures type of preparation.\nPlease be sure you think out loud, ask clarifying questions, and respond to \"hints\".",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties {:logseq.property.node/display-type :quote}}]}
+  {:page {:build/journal 20250330},
+   :blocks
+   [{:block/title
+     "I call it my billion-dollar mistake. At that time, I was designing the first comprehensive type system for references in an object-oriented language. My goal was to ensure that all use of references should be absolutely safe, with checking performed automatically by the compiler. But I couldn’t resist the temptation to put in a null reference, simply because it was so easy to implement. This has led to innumerable errors, vulnerabilities, and system crashes, which have probably caused a billion dollars of pain and damage in the last forty years. #quote",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties
+     {:user.property/source-XNvKZqQN
+      "https://doc.rust-lang.org/book/ch06-01-defining-an-enum.html?highlight=optional#the-option-enum-and-its-advantages-over-null-values",
+      :user.property/author-rMuY3sVf "[[Tony Hoare]]",
+      :logseq.property.node/display-type :quote,
+      :user.property/notes-kUaXfLGy
+      #{"[[d/null]] [[d/nil]] [[d/anti-patterns]]"}}}]}
+  {:page {:build/journal 20250406},
+   :blocks
+   [{:block/title
+     "Dress Me Slowly, I’m In a Hurry\nThis ironic title is an old saying , which originates from Napoléon Bonaparte. The basic concept: sometimes the best way to “go fast”, is to do things slow (and also, very well).\nI would like to spicy it up and say, take your time to have multiple iterations of your app. At the end you will have the experience of writing it well more than once and building on small success all the way up and get entangled in a mess were most of the time nothing work and you spend most of the time debugging instead of thinking and coding.",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties {:logseq.property.node/display-type :quote}}]}
+  {:page {:build/journal 20250420},
+   :blocks
+   [{:block/title
+     "A stupid villian threatens, Charlie. A smarter villain offers a service. #quote",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties
+     {:user.property/source-XNvKZqQN "[[book/starter villian]]",
+      :user.property/author-rMuY3sVf "John Scalzi",
+      :user.property/epigraph_display-KSB3dHhj "yes",
+      :logseq.property.node/display-type :quote}}]}
+  {:page {:build/journal 20250729},
+   :blocks
+   [{:block/title
+     "Knowledge makes men gentle just as justice hardens us. #quote",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties
+     {:user.property/author-rMuY3sVf "Montesquieu",
+      :user.property/epigraph_display-KSB3dHhj "yes",
+      :logseq.property.node/display-type :quote}}]}
+  {:page {:build/journal 20250730},
+   :blocks
+   [{:block/title
+     "Accordingly, he turned to his dining companions and calmly excused himself, retired to his bedroom [and invited individuals] to witness while he slit his veins. He then awaited his death while conversing with his friend [[Demetrius]], a philosopher of the rival school of the Cynics, about the nature of the soul [until he died].",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties {:logseq.property.node/display-type :quote}}]}
+  {:page {:build/journal 20250801},
+   :blocks
+   [{:block/title
+     "I wish conservatives understood one thing:If it weren’t for blue states, the U.S. would be a third world country with broadband holes, broke schools, and zero innovation.Red states take the federal money.\nBlue states make it.You don’t fund the country, you drain it.Bad ideas. No revenue. And the loudest voices are always the ones who bring the least to the table.",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties {:logseq.property.node/display-type :quote}}]}
+  {:page {:build/journal 20250828},
+   :blocks
+   [{:block/title
+     "I do not like that man, I must get to know him better. #quote",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties
+     {:user.property/source-XNvKZqQN "Get the Truth (book)",
+      :user.property/author-rMuY3sVf "Abraham Lincoln",
+      :user.property/epigraph_display-KSB3dHhj "yes",
+      :logseq.property.node/display-type :quote}}]}
+  {:page {:build/journal 20260331},
+   :blocks
+   [{:block/title
+     "A Jack of all trades is master of none, but oftentimes better than a master of one. #quote",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties
+     {:user.property/source-XNvKZqQN
+      "{{video https://www.youtube.com/watch?v=S9Jb7CZ2P-E}}",
+      :user.property/epigraph_display-KSB3dHhj "yes",
+      :logseq.property.node/display-type :quote}}]}
+  {:page {:build/journal 20260417},
+   :blocks
+   [{:block/title
+     "Great paintings do not happen in the finish but in the beginning. #quote",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties
+     {:user.property/source-XNvKZqQN
+      "Life Drawing: How to Portray the Figure with accuracy and Expression",
+      :user.property/author-rMuY3sVf "Nelson Shanks",
+      :user.property/epigraph_display-KSB3dHhj "yes",
+      :logseq.property.node/display-type :quote}}
+    {:block/title
+     "A drawing started tentatively rarely gains vitality later, while the bold statement, however preposterous, possesses both conviction and flavor. #quote",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties
+     {:user.property/source-XNvKZqQN
+      "Life Drawing: How to Portray the Figure with accuracy and Expression",
+      :user.property/author-rMuY3sVf "Robert Fawcett",
+      :user.property/epigraph_display-KSB3dHhj "",
+      :logseq.property.node/display-type :quote}}]}
+  {:page {:block/title "Quote"},
+   :blocks
+   [{:block/title
+     "Everything is _vague_ to a degree you do not realize until you have tried to make it _precise_. — [[Bertrand Russell]] (Quoted in Superintelligence by Nick Bostrom)",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties
+     {:user.property/epigraph_display-KSB3dHhj "yes",
+      :logseq.property.node/display-type :quote}}
+    {:block/title
+     "Wer fremde Sprachen nicht kennt, weiss nichts von seiner eigenen. —Goethe",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties
+     {:user.property/epigraph_display-KSB3dHhj "yes",
+      :logseq.property.node/display-type :quote}}
+    {:block/title
+     "Apprendre une langue, c’est vivre de nouveau. (French proverb)",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties
+     {:user.property/epigraph_display-KSB3dHhj "yes",
+      :logseq.property.node/display-type :quote}}
+    {:block/title
+     "A lie which is half a truth is ever the blackest of lies.\n— ALFRED, LORD TENNYSON (Weaponized Lies: How to think Critically in the Post-Truth Era by Daniel J. Levitin)",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties
+     {:user.property/epigraph_display-KSB3dHhj "yes",
+      :logseq.property.node/display-type :quote}}
+    {:block/title
+     "Wisdom don't consist in knowing more that is new, but in knowing less that is false. —Josh billings",
+     :block/collapsed? true,
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties
+     {:user.property/epigraph_display-KSB3dHhj "yes",
+      :logseq.property.node/display-type :quote}}
+    {:block/title
+     "I honestly believe it is better to know nothing than to know what ain't so. - Josh billings",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties
+     {:user.property/epigraph_display-KSB3dHhj "yes",
+      :logseq.property.node/display-type :quote}}
+    {:block/title
+     "If you are lonely when you are alone, you are in bad company — Jean-Paul Sartre",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties
+     {:user.property/epigraph_display-KSB3dHhj "yes",
+      :logseq.property.node/display-type :quote}}
+    {:block/title
+     "Only those who will risk going too far can possibly find out how far one can go. —T.S. Eliot",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties
+     {:user.property/epigraph_display-KSB3dHhj "yes",
+      :logseq.property.node/display-type :quote}}
+    {:block/title
+     "Three things cannot be long hidden: the sun, the moon, and the truth. — Multiple Attributions (Buddha, Tathagata)",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties
+     {:user.property/epigraph_display-KSB3dHhj "yes",
+      :logseq.property.node/display-type :quote}}
+    {:block/title
+     "No great mind has ever existed without a touch of madness. —Aristotle (Attributed to Aristotle by Seneca the Younger, though not in Aristotle's surviving works.)",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties
+     {:user.property/epigraph_display-KSB3dHhj "yes",
+      :logseq.property.node/display-type :quote}}
+    {:block/title
+     "It is the mark of an educated mind to be able to entertain a thought without accepting it.\n— Aristotle",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties
+     {:user.property/epigraph_display-KSB3dHhj "yes",
+      :logseq.property.node/display-type :quote}}
+    {:block/title
+     "There is only one important time—now. It is the only important time because it is the only time when we have any power. —Tolstoy",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties
+     {:user.property/epigraph_display-KSB3dHhj "yes",
+      :logseq.property.node/display-type :quote}}
+    {:block/title
+     "The books that the world calls immoral are books that show the world its own shame. — Oscar Wilde",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties
+     {:user.property/epigraph_display-KSB3dHhj "yes",
+      :logseq.property.node/display-type :quote}}
+    {:block/title
+     "If you do not take an interest in the affairs of your government, then you are doomed to live under the rule of fools.—Plato",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties
+     {:user.property/epigraph_display-KSB3dHhj "yes",
+      :logseq.property.node/display-type :quote}}
+    {:block/title
+     "No one is more hated than he who speaks the truth.—Plato",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties
+     {:user.property/epigraph_display-KSB3dHhj "yes",
+      :logseq.property.node/display-type :quote}}
+    {:block/title
+     "I would rather have questions that can't be answered than answers that can't be questioned.—Richard Feynman",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties
+     {:user.property/epigraph_display-KSB3dHhj "yes",
+      :logseq.property.node/display-type :quote}}
+    {:block/title
+     "The test of our progress is not whether we add more to the abundance of those who have much; it is whether we provide enough for those who have too little.—Franklin D. Roosevelt",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties
+     {:user.property/epigraph_display-KSB3dHhj "yes",
+      :logseq.property.node/display-type :quote}}
+    {:block/title
+     "Those who can make you believe absurdities can make you commit atrocities.—Voltaire",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties
+     {:user.property/epigraph_display-KSB3dHhj "yes",
+      :logseq.property.node/display-type :quote}}
+    {:block/title
+     "It's much easier to do and die than it is to reason why.—H.A. Suddert Kennedy",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties
+     {:user.property/epigraph_display-KSB3dHhj "yes",
+      :logseq.property.node/display-type :quote}}
+    {:block/title
+     "Reason is logic, or reason is motive, or reason is a way of life.—John Le Carré",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties
+     {:user.property/epigraph_display-KSB3dHhj "yes",
+      :logseq.property.node/display-type :quote}}
+    {:block/title
+     "Read not to contradict and confute, not to believe and take fo rgranted... but to weigh and consider—Francis Bacon",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties
+     {:user.property/epigraph_display-KSB3dHhj "yes",
+      :logseq.property.node/display-type :quote}}
+    {:block/title
+     "Ignorance of reality provides no protection from it.—Harold Gordon",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties
+     {:user.property/epigraph_display-KSB3dHhj "yes",
+      :logseq.property.node/display-type :quote}}
+    {:block/title
+     "You can lead a man up tothe university, but you can't make him think.—Finley Peter Dunne",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties
+     {:user.property/epigraph_display-KSB3dHhj "yes",
+      :logseq.property.node/display-type :quote}}
+    {:block/title
+     "Good sense is of all things in the world the most equally distributed, for everybody thinks himself so abundantly provided with it, that even those most difficult to please in all other matters do not commonly desire more of it than they already possess.—Descartes",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties
+     {:user.property/epigraph_display-KSB3dHhj "yes",
+      :logseq.property.node/display-type :quote}}
+    {:block/title
+     "Life is a game in which the player must appear ridiculous. (Downton Abby, Dowager Countess)",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties
+     {:user.property/epigraph_display-KSB3dHhj "yes",
+      :logseq.property.node/display-type :quote}}
+    {:block/title
+     "If you ever feel comfortable when releasing a new product, you waited to long to release...—Joshua Ballanco",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties
+     {:user.property/epigraph_display-KSB3dHhj "yes",
+      :logseq.property.node/display-type :quote}}
+    {:block/title
+     "People can only meet you at the depth they met themselves. (Since You Asked podcasts, Season 2 Episode 6)",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties
+     {:user.property/epigraph_display-KSB3dHhj "yes",
+      :logseq.property.node/display-type :quote}}
+    {:block/title
+     "Do something, not everything. (Inside the Box by David Epstein)",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties
+     {:user.property/epigraph_display-KSB3dHhj "yes",
+      :logseq.property.node/display-type :quote}}
+    {:block/title "#quote",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties
+     {:user.property/source-XNvKZqQN "",
+      :user.property/author-rMuY3sVf "",
+      :logseq.property.node/display-type :quote}}]}
+  {:page
+   {:block/title "Software Engineer, Shopper Inspiration (Backend)"},
+   :blocks
+   [{:block/title
+     "Copilot makes writing code cheaper, but owning it more expensive. — Sr. Engineer",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties {:logseq.property.node/display-type :quote}}]}
+  {:page {:block/title "What We Owe To Each Other"},
+   :blocks
+   [{:block/title
+     "We all believe that some actions are morally wrong. p1",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties {:logseq.property.node/display-type :quote}}
+    {:block/title
+     "If judgements of right and wrong can be said to be true or false, this must be because there is some realm of facts that they are ment to describe, and to which they can correspond, or fail to correspond.",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties {:logseq.property.node/display-type :quote}}
+    {:block/title
+     "Metaphysical questions about the subject matter of judgments of right and wrong are important only if answers to them are required in order to show how these judgments can have this practical significance.",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties
+     {:user.property/epigraph_display-KSB3dHhj "",
+      :logseq.property.node/display-type :quote}}
+    {:block/title
+     "^^It is enough to show that we have good grounds for taking certain conclusion that actions are right or are wrong to be correct^^ understood as conclusions about morality, and that we therefore have good grounds for giving these conclusions the particular importance that we normally attach to moral judgements. p2",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties {:logseq.property.node/display-type :quote}}
+    {:block/title
+     "it does not seem that the reason-giving force of facts about right and wrong derives from their metaphysical status.",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties {:logseq.property.node/display-type :quote}}
+    {:block/title
+     "This is shown by the fact that it is not clear how an account of this status—for example, one showing that judgements of right and wrong are about some aspect of physical and psychological reality—would, simply in virtue of the \"reality\" it would give to the subject matter of judgements of right and wrong, bolster their reason-giving fource.",
+     :build/tags #{:logseq.class/Quote-block},
+     :build/properties {:logseq.property.node/display-type :quote}}]}],
+ :properties
+ {:user.property/epigraph_display-KSB3dHhj
+  {:db/cardinality :db.cardinality/one,
+   :logseq.property/type :default,
+   :block/title "epigraph_display"},
+  :user.property/source-XNvKZqQN
+  {:db/cardinality :db.cardinality/one,
+   :logseq.property/type :default,
+   :block/title "source"},
+  :user.property/author-rMuY3sVf
+  {:db/cardinality :db.cardinality/one,
+   :logseq.property/type :default,
+   :block/title "author"},
+  :user.property/notes-kUaXfLGy
+  {:db/cardinality :db.cardinality/many,
+   :logseq.property/type :default,
+   :block/title "notes"}},
+ :logseq.db.sqlite.export/export-type :view-nodes}

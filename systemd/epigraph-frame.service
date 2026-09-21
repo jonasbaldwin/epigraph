@@ -1,0 +1,15 @@
+[Unit]
+Description=Epigraph Frame quote display
+After=default.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h/epigraph/scripts
+ExecStart=/usr/bin/python3 %h/epigraph/scripts/display_quotes.py
+Environment=PYTHONUNBUFFERED=1
+Restart=on-failure
+RestartSec=10
+TimeoutStopSec=45
+
+[Install]
+WantedBy=default.target
